@@ -34,10 +34,10 @@ export class HeroSearchComponent implements OnInit {
     );
   }
 
-    private searchTerms = new Subject<string>();
+  private searchTerms = new Subject<string>();
 
-  // Push a search term into the observable stream.
-  search(term: string): void {
-    this.searchTerms.next(term);
-}
+    // Push a search term into the observable stream.
+    search(term: string): void {
+      this.searchTerms.next(term);
+  }
 }
